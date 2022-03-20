@@ -1,0 +1,352 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: #1e1e1e;
+    --color-bg: #e1e1e1;
+    --card-bg: #3d3d3d;
+    --fire: #E4604D;
+    --grass: #9DD465;
+    --electric: #ccb103;
+    --water: #6A83D6;
+    --ground: #E4C967;
+    --rock: #5c5c5c;
+    --fairy: #EEB2FA;
+    --ghost: #680f66;
+    --poison: #9F619D;
+    --bug: #C5CF4A;
+    --dragon: #3c3963;
+    --psychic: #E56EAF;
+    --flying: #3bc1ff;
+    --fighting: #9B5A48;
+    --normal: #BAB8AB;
+    --ice: #8edbff;
+    --dark: #08080863;
+    --steel: #888a8b;
+}
+
+.bg-fire {
+    background: linear-gradient(to top right, var(--fire), var(--card-bg) 25%);
+}
+.fire {
+    background-color: var(--fire);
+}
+
+
+.bg-grass {
+    background: linear-gradient(to top right, var(--grass), var(--card-bg) 25%);
+}
+.grass {
+    background-color: var(--grass);
+}
+
+
+.bg-electric {
+    background: linear-gradient(to top right, var(--electric), var(--card-bg) 25%);
+}
+.electric {
+    background-color: var(--electric);
+}
+
+
+.bg-water {
+    background: linear-gradient(to top right, var(--water), var(--card-bg) 25%);
+}
+.water {
+    background-color: var(--water);
+}
+
+
+.bg-ground {
+    background: linear-gradient(to top right, var(--ground), var(--card-bg) 25%);
+}
+.ground {
+    background-color: var(--ground);
+}
+
+
+.bg-rock {
+    background: linear-gradient(to top right, var(--rock), var(--card-bg) 25%);
+}
+.rock {
+    background-color: var(--rock);
+}
+
+
+.bg-fairy {
+    background: linear-gradient(to top right, var(--fairy), var(--card-bg) 25%);
+}
+.fairy {
+    background-color: var(--fairy);
+}
+
+
+.bg-ghost {
+    background: linear-gradient(to top right, var(--ghost), var(--card-bg) 25%);
+}
+.ghost {
+    background-color: var(--ghost);
+}
+
+
+.bg-poison {
+    background: linear-gradient(to top right, var(--poison), var(--card-bg) 25%);
+}
+.poison {
+    background-color: var(--poison);
+}
+
+
+.bg-bug {
+    background: linear-gradient(to top right, var(--bug), var(--card-bg) 25%);
+}
+.bug {
+    background-color: var(--bug);
+}
+
+
+.bg-dragon {
+    background: linear-gradient(to top right, var(--dragon), var(--card-bg) 25%);
+}
+.dragon {
+    background-color: var(--dragon);
+}
+
+
+.bg-psychic {
+    background: linear-gradient(to top right, var(--psychic), var(--card-bg) 25%);
+}
+.psychic {
+    background-color: var(--psychic);
+}
+
+
+.bg-flying {
+    background: linear-gradient(to top right, var(--flying), var(--card-bg) 25%);
+}
+.flying {
+    background-color: var(--flying);
+}
+
+
+.bg-fighting {
+    background: linear-gradient(to top right, var(--fighting), var(--card-bg) 25%);
+}
+.fighting {
+    background-color: var(--fighting);
+}
+
+
+.bg-normal {
+    background: linear-gradient(to top right, var(--normal), var(--card-bg) 25%);
+}
+.normal {
+    background-color: var(--normal);
+}
+
+
+.bg-ice {
+    background: linear-gradient(to top right, var(--ice), var(--card-bg) 25%);
+}
+.ice {
+    background-color: var(--ice);
+}
+
+
+.bg-dark {
+    background: linear-gradient(to top right, var(--dark), var(--card-bg) 25%);
+}
+.dark {
+    background-color: var(--dark);
+}
+
+
+.bg-steel {
+    background: linear-gradient(to top right, var(--steel), var(--card-bg) 25%);
+}
+.steel {
+    background-color: var(--steel);
+}
+
+
+body{
+    background-color: var(--body-bg);
+    color: var(--color-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+}
+
+.card .title h2 {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.card .img {
+    margin: 40px auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-size: 400% 400%;
+    background-position: 0 0;
+    animation: bg-out 300ms ease-in forwards 1;
+}
+
+.card:hover .img {
+    animation: bg-in 300ms ease-in forwards 1;
+}
+
+.card .img img {
+    width: 220px;
+}
+
+.card .type p {
+    margin: 0;
+}
+
+.card .type {
+    color:var(--body-bg);
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+.favorite {
+    border: none;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius:  0 0 0 4px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.favorite::before {
+    position: absolute;
+    content: "";
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.favorite::after {
+    position: absolute;
+    content: "";
+    right: -50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.favorited {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background: #ff2727;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius:  0 0 0 4px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    animation: popup .5s linear;
+}
+
+.favorited::before {
+    position: absolute;
+    content: "";
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.favorited::after {
+    position: absolute;
+    content: "";
+    right: -50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 1244px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
+
+
+@keyframes bg-in{
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
+
+@keyframes bg-out{
+    0% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes popup {
+    100%{
+        transform: scale(1.3) rotate(-45deg);
+        opacity: 0;
+    }
+}
